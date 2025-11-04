@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryInverse"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/white"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:maxLines="1"
+        android:paddingStart="16dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="15dp"
+        android:text="@string/button_zero"
+        android:textColor="@android:color/black"
+        android:textSize="48sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp">
+
+            <Button
+                android:id="@+id/buttonMemoryClear"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_memory_clear" />
+
+            <Button
+                android:id="@+id/buttonMemoryRecall"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_memory_recall" />
+
+            <Button
+                android:id="@+id/buttonMemorySave"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_memory_save" />
+
+            <Button
+                android:id="@+id/buttonMemoryAdd"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_memory_add" />
+
+            <Button
+                android:id="@+id/buttonMemorySubtract"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_memory_subtract" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp">
+
+            <Button
+                android:id="@+id/buttonBackspace"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_backspace" />
+
+            <Button
+                android:id="@+id/buttonClearEntry"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_clear_entry" />
+
+            <Button
+                android:id="@+id/buttonClear"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_clear" />
+
+            <Button
+                android:id="@+id/buttonSignChange"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_sign_change" />
+
+            <Button
+                android:id="@+id/buttonSquareRoot"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_square_root" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp">
+
+            <Button
+                android:id="@+id/buttonSeven"
+                style="@style/CalcButtonStyle"
+                android:text="@string/button_seven" />
+
+            <Button
+                android:id="@+id/buttonEight"
+                style="@style/CalcButtonStyle"
+                android:text="@string/button_eight" />
+
+            <Button
+                android:id="@+id/buttonNine"
+                style="@style/CalcButtonStyle"
+                android:text="@string/button_nine" />
+
+            <Button
+                android:id="@+id/buttonDivide"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_divide" />
+
+            <Button
+                android:id="@+id/buttonPercent"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_percent" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp">
+
+            <Button
+                android:id="@+id/buttonFour"
+                style="@style/CalcButtonStyle"
+                android:text="@string/button_four" />
+
+            <Button
+                android:id="@+id/buttonFive"
+                style="@style/CalcButtonStyle"
+                android:text="@string/button_five" />
+
+            <Button
+                android:id="@+id/buttonSix"
+                style="@style/CalcButtonStyle"
+                android:text="@string/button_six" />
+
+            <Button
+                android:id="@+id/buttonMultiply"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_multiply" />
+
+            <Button
+                android:id="@+id/buttonReciprocal"
+                style="@style/CalcOperationButtonStyle"
+                android:layout_height="63dp"
+                android:text="@string/button_reciprocal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp">
+
+            <Button
+                android:id="@+id/buttonOne"
+                style="@style/CalcButtonStyle"
+                android:text="@string/button_one" />
+
+            <Button
+                android:id="@+id/buttonTwo"
+                style="@style/CalcButtonStyle"
+                android:text="@string/button_two" />
+
+            <Button
+                android:id="@+id/buttonThree"
+                style="@style/CalcButtonStyle"
+                android:text="@string/button_three" />
+
+            <Button
+                android:id="@+id/buttonSubtract"
+                style="@style/CalcOperationButtonStyle"
+                android:text="@string/button_subtract" />
+
+            <Button
+                android:id="@+id/buttonEquals"
+                style="@style/CalcEqualsButtonStyle"
+                android:layout_rowSpan="2"
+                android:layout_span="1"
+                android:text="@string/button_equals" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp">
+
+            <Button
+                android:id="@+id/buttonZero"
+                style="@style/CalcButtonStyle"
+                android:layout_width="158dp"
+                android:layout_span="2"
+                android:text="@string/button_zero" />
+
+            <Button
+                android:id="@+id/buttonDot"
+                style="@style/CalcButtonStyle"
+                android:layout_width="13dp"
+                android:text="@string/button_dot" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                style="@style/CalcOperationButtonStyle"
+                android:layout_width="33dp"
+                android:text="@string/button_add" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
